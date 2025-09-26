@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding:0;
+  }
+  
+  .main{
+    width: 100%;
+    background-color:whitesmoke;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+  }
+  
+  .navbar{
+    width:90%;
+    display: flex;
+    margin: auto;
+    padding: 5px ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .logo{
+    width: 300px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%; 
+  }
+  
+  ul{
+    margin-top: -4%;
+  }
+  
+  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+  }
+  ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#846d62;
+    margin-top: -3%;
+  }
+  
+  ul li a:hover{
+    color:#a8a29c;
+  }
+  .contact{
+    height: -50vh;
+    padding: 38px;
+    text-align: center;
+  }
+  .container{
+    max-width: 800px;
+    margin: -150px;
+    padding-left: 30%;
+  }
+  .contact h2{
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+    color: #846d62;
+    margin-bottom: 40px;
+  }
+  .contact-wrapper{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .contact-form{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: #846d62;
+  }
+  .contact-form h3{
+    padding: auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: #846d62;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .form-group{
+    margin-bottom: 20px;
+  }
+  input,textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+  }
+  input:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+  }
+  .button{
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+    color: #a8a29c;
+    background-color: #a8a29c;
+  }
+  button:hover{
+    background-color: #846d62;
+  }
+  .contact-info{
+    text-align: left;
+    display: inline;
+  }
+  .contact-info h3{
+    margin: 0%;
+    letter-spacing: 0cap;
+  }
+
+  image{
+    width:30%;
+    height: 55%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+   }
+  
+   .image img{
+    position:absolute;
+    width: 500px;
+    height: 85%;
+    left: 76%;
+    transform: translate(-50%);
+    top:auto;
+    bottom: 0;
+   }

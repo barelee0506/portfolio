@@ -1,0 +1,115 @@
+* {
+    margin-top: 0px;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+}
+
+.main {
+    width: 100%;
+    background-color: whitesmoke;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 300px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #846d62;
+    margin-top: -3%;
+}
+
+ul li a:hover {
+    color: #a8a29c;
+}
+.Project{
+    margin-top: -100px;
+    margin-bottom: 1px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: #846d62;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #846d62;
+    text-align: center;
+    letter-spacing: 10%;
+}
+
+.container .card {
+    width: 315px;
+    height: 400px;
+    background: #a8a29c;
+    margin: 40px 10px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #846d62;
+    transition: 0.3s ease-in-out;
+    margin-top: -5%;
+    left: 20%;
+    position: relative;
+}
+
+.container .card .imgbox {
+    position: relative;
+    width: 280px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imgbox:hover img {
+    transform: scale(1.1);
+}

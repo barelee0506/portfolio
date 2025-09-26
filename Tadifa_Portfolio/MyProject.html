@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects - Nepthalie Tadifa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+ 
+    header {
+      background: #333;
+      padding: 15px 0;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .slideshow-container {
+      max-width: 900px;
+      position: relative;
+      margin: 50px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    .mySlides {
+      display: none;
+    }
+    .mySlides img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .caption {
+      text-align: center;
+      padding: 15px;
+      background: #333;
+      color: #fff;
+    }
+
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background: rgba(0,0,0,0.5);
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    
+    .dots {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    .active, .dot:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Tadifa_Activity 4.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="MyProject.html">Projects</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="mySlides">
+      <img src="carlos.PNG" alt="Carlos Yulo Project">
+      <div class="caption">Wave the Philippine Colors – Carlos Yulo Olympic Gold</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides">
+      <img src="simpport.PNG" alt="Portfolio Project">
+      <div class="caption">Personal Portfolio Website</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides">
+      <img src="contact.PNG" alt="Contact Page">
+      <div class="caption">Contact Page of MadBox Burger</div>
+    </div>
+
+    <!-- Slide 4-->
+    <div class="mySlides">
+      <img src="snake.PNG" alt=" Retro Snake">
+      <div class="caption"> C++ Retro Snake Game </div>
+    <a href="C++ (Retro Snake Game).zip" download>Download Source Code</a>
+    </div>
+
+    <!-- Slide 5-->
+    <div class="mySlides">
+      <img src="java.PNG" alt=" Simple Calculator">
+      <div class="caption"> JAVA  Simple calculator </div>
+       <a href="JAVA (simple calculator).zip" download>Download Source Code</a>
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nepthalie Tadifa</p>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 6000); 
+    }
+
+    function plusSlides(n) {
+      slideIndex += n - 1;
+      showSlides();
+    }
+
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+  </script>
+</body>
+</html>

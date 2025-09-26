@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nepthalie Tadifa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+   
+    header {
+      background: #333;
+      padding: 15px 0;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+   
+    .contact {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    .contact h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #555;
+    }
+
+  
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Tadifa_Activity 4.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="MyProject.html">Projects</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:tadifa.nepthalie17@gmail.com">tadifa.nepthalie17@gmail.com</a></p>
+      <p><strong>Phone:</strong> +63 997 296 1462</p>
+    </div>
+
+    <form onsubmit="showMessage(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage" style="text-align:center; color:green; font-weight:bold; margin-top:15px;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nepthalie Tadifa</p>
+  </footer>
+
+  <script>
+    function showMessage(e) {
+      e.preventDefault();
+      document.getElementById("formMessage").textContent = "Thank you! Your message has been sent.";
+    }
+  </script>
+</body>
+</html>
